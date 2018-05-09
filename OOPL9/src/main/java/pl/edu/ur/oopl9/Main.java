@@ -5,17 +5,31 @@
  */
 package pl.edu.ur.oopl9;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author maarchyl
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+   
+    List<Object> lista = new ArrayList<Object>();
+    Auto a1= new Auto("Fiat","Uno",180,1000);
+    Auto a2= new Auto("Opel","Astra",190,10000);
+    Auto a3= new Auto("Mazda","6",200,17000);
+    Auto a4= new Auto("Mercedes","123",300,100000);
+    lista.add(a1);
+    lista.add(a2);
+    lista.add(a3);
+    lista.add(a4);
+    
+    for (int i=0; i<lista.size();i++){
+        System.out.println("lista"+(i+1)+":"+lista.get(i).toString());
     }
     
+    }
 }
+
